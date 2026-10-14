@@ -1,0 +1,30 @@
+name: V4 public regression
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  v4-public:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: v4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/verify_checksums.py
+      - run: python -m pip install -e ".[dev]" build
+      - run: python -m agent_governance_portfolio verify
+      - run: python -m pytest -q
+      - run: python scripts/sync_assets.py --check
+      - run: python scripts/validate_skills.py
+      - run: python examples/custom_domain.py
+      - run: python -m agent_governance_portfolio demo sac_dispatch
+      - run: python -m agent_governance_portfolio demo generic_change_request
+      - run: python -m agent_governance_portfolio demo research_workflow
+      - run: python -m agent_governance_portfolio demo skill_evolution
+      - run: python -m build

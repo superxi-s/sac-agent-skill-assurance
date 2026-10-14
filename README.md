@@ -1,5 +1,23 @@
 # Agent Skill Assurance Runtime
 
+## V4 公开精修版（与 V1 并存）
+
+最新 `4.0.0.dev5` 公开展示工程位于 [`v4/`](v4/README.md)。本仓库根目录的 V1 包、源码、测试和历史保持原有入口；V4 使用独立的 `agent-action-governance` 包及 `agent_governance` 命名空间，**不是 V1 的直接兼容替换**。
+
+2026-10-12展示修订补充SAC集成复盘及自进化说明，将公开声明用例改为中性fixture命名；冻结源码、Skill、Prompt、Registry和正式门槛保持不变。
+
+```bash
+cd v4
+python -m venv .venv
+# Windows: .venv\Scripts\Activate.ps1
+# macOS/Linux: source .venv/bin/activate
+python -m pip install -e ".[dev]" build
+python -m agent_governance_portfolio verify
+python -m pytest -q
+```
+
+请分别使用虚拟环境运行 V1 与 V4。V4 保留冻结安全核心、Skill 和 Registry，不重跑历史 Benchmark112，不包含企业完整 SAC 系统或私有证据。[迁移与公开授权记录](V4_PUBLIC_IMPORT.md)说明版本边界及原 ZIP 审核说明的时点差异。V4 为开发展示版本，不是正式 RC1。
+
 > A reusable governance and assurance runtime for Agent Skills, with a generic pack and a real-world SAC energy-dispatch adapter.
 
 面向 Agent Skills 的可复用可信治理运行时，通过 Capability、Authority、Evidence、Approval 与 Trajectory 约束复杂领域 Skill 的安全执行。

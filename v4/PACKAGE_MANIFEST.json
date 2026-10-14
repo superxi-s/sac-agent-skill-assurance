@@ -1,0 +1,22 @@
+{
+  "name": "Agent Skill Governance V4",
+  "version": "4.0.0.dev5",
+  "release_kind": "PUBLIC_PORTFOLIO_DOCUMENTATION_AND_SYNTHETIC_FIXTURE_REVISION",
+  "rights_approved": "CONFIRMED_BY_REQUESTOR",
+  "ready_to_publish": true,
+  "publication_scope": "PUBLIC_SOURCE_PR_ONLY_NOT_PRODUCTION_OR_RC1",
+  "rc1_ready": false,
+  "formal_promotion": false,
+  "frozen_core_changed": 0,
+  "runtime_prompt_changed": 0,
+  "github_pushed": false,
+  "baseline_zip_sha256": "134b4c50a0193a061a160601dd13bbba86bec1a43e8bafe5e18501254cbdd87d",
+  "legacy_source_copies": "REMOVED_FROM_THIS_PACKAGE_ONLY",
+  "frozen_history": "PRESERVED",
+  "test_receipt": "TEST_RECEIPT.json",
+  "documentation_revision": "2026-10-12-neutral-test-fixtures",
+  "baseline_source_archive": "Agent_Skill_Governance_V4_PUBLIC_REFINED_20261011(1).zip",
+  "neutral_test_fixture": "docs/evolution/claim_synthetic_cases.jsonl",
+  "test_fixture_updated": true,
+  "public_case_metadata": "case_id,text,authority,expected_label,text_sha256"
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "path": "src/agent_governance/evolution/validator.py",
+    "line": 27,
+    "rule": "developer_absolute_path",
+    "match_sha256": "6faba07f33e642da4244a1876dd1f25c8175e20dbeb88535a37b3f124748d2fe",
+    "reason": "拒绝不安全补丁的正则字面量，不是开发者实际目录"
+  },
+  {
+    "path": "tests/test_evolution.py",
+    "line": 153,
+    "rule": "developer_absolute_path",
+    "match_sha256": "7cbb8e356f240e3ad36f6f3c5714672e43ce15f6e1d9abe52e48ce13776328fb",
+    "reason": "负向安全测试中的Windows demo假路径，不代表真实用户目录"
+  },
+  {
+    "path": "tests/test_evolution.py",
+    "line": 153,
+    "rule": "developer_absolute_path",
+    "match_sha256": "6faba07f33e642da4244a1876dd1f25c8175e20dbeb88535a37b3f124748d2fe",
+    "reason": "负向安全测试中的Linux假路径，只验证拒绝，不代表实际存储"
+  }
+]

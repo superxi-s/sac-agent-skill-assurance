@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-action-governance"
+version = "4.0.0.dev5"
+description = "面向 Tool Calling Agent 的高风险操作治理与审批框架"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2,<3", "PyYAML>=6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+agent_governance_assets = ["data/**/*"]
+agent_governance = ["sac_policy/**/*.json", "sac_policy/**/*.md", "sac_policy/**/*.py"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

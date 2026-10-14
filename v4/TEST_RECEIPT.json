@@ -1,0 +1,19 @@
+{
+  "scope": "公开中性测试用例版本：重新运行的回归、示例与校验",
+  "public_tests": {
+    "passed": 330,
+    "failed": 0,
+    "command": "PYTHONPATH=src python -m pytest -q"
+  },
+  "examples": {
+    "passed": 4,
+    "total": 4
+  },
+  "extra_custom_domain": "PASS",
+  "registry_v3": "PASS",
+  "registry_legacy": "PASS",
+  "resource_parity": "PASS (14 files)",
+  "private_sac_regression": "NOT_REEXECUTED_HISTORICAL",
+  "benchmark112": "NOT_REEXECUTED_HISTORICAL",
+  "model_calls": 0
+}

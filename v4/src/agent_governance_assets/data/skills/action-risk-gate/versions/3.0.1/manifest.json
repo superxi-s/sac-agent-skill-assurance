@@ -1,0 +1,9 @@
+{
+  "schema_version": "action-governance-skill-v3",
+  "name": "action-risk-gate",
+  "version": "3.0.1",
+  "entrypoint": "agent_governance.runtime:GovernanceRuntime",
+  "trigger_type": "system_lifecycle_hook",
+  "permissions": ["READ_AUTHORITY", "EVALUATE_POLICY"],
+  "forbidden_permissions": ["DIRECT_DB_WRITE", "DIRECT_DEVICE_CONTROL", "OVERRIDE_VALIDATOR"]
+}

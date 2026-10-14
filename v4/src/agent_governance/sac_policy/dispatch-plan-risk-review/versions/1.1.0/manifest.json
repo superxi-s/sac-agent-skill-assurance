@@ -1,0 +1,11 @@
+{
+  "schema_version": "skill-package-v1",
+  "name": "dispatch-plan-risk-review",
+  "version": "1.1.0",
+  "input_schema_version": "risk-review-input-v1",
+  "output_schema_version": "risk-review-v1",
+  "entrypoint": "scripts/review.py:review",
+  "supported_modes": ["gate"],
+  "permissions": ["READ", "REVIEW"],
+  "forbidden_permissions": ["ACTIVATE", "MYSQL_WRITE", "DEVICE_EXECUTION", "CRITICAL_WRITE"]
+}

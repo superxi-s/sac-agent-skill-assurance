@@ -1,0 +1,25 @@
+{
+  "schema_version": "skill-registry-v1",
+  "skills": {
+    "dispatch-plan-risk-review": {
+      "default_version": "1.1.0",
+      "versions": {
+        "1.1.0": {
+          "path": "dispatch-plan-risk-review/versions/1.1.0",
+          "sha256": "0c227592c5247eca1187ac8ac0af8c146fc5276984c75aa6fe21bd6ffce53783",
+          "lifecycle": "ACTIVE"
+        }
+      }
+    },
+    "dispatch-plan-risk-gate": {
+      "default_version": "2.0.0",
+      "versions": {
+        "2.0.0": {
+          "path": "dispatch-plan-risk-gate/versions/2.0.0",
+          "sha256": "10219e5c8aa6fb06f2c48835faa7e2ea9866a8368e0eda0d22c7fa1e3465c1c6",
+          "lifecycle": "ACTIVE"
+        }
+      }
+    }
+  }
+}

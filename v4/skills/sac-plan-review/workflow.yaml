@@ -1,0 +1,6 @@
+mode: read_only
+steps:
+  - summarize_constraints
+  - summarize_validator
+  - explain_risk
+  - cite_evidence

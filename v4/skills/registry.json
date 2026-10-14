@@ -1,0 +1,25 @@
+{
+  "schema_version": "action-governance-registry-v3",
+  "skills": {
+    "action-risk-gate": {
+      "default_version": "3.0.1",
+      "versions": {
+        "3.0.1": {
+          "path": "action-risk-gate/versions/3.0.1",
+          "sha256": "760f28df710490941c6cfb1ade58a1014cc035e36cf7b5a1f5a9861dd20c8121",
+          "lifecycle": "ACTIVE"
+        }
+      }
+    },
+    "action-review": {
+      "default_version": "3.0.1",
+      "versions": {
+        "3.0.1": {
+          "path": "action-review/versions/3.0.1",
+          "sha256": "f50316401494185ba05c4da0a611f5df892a79498084657644434802179ad963",
+          "lifecycle": "ACTIVE"
+        }
+      }
+    }
+  }
+}

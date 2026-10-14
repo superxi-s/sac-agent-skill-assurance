@@ -1,0 +1,12 @@
+recursive-include src/agent_governance_assets/data *
+recursive-include src/agent_governance/sac_policy *.json *.md *.py
+include LICENSE
+include NOTICE.md README.md INSTALL.md VERSION_AND_SCOPE.md
+include PORTFOLIO_ONE_PAGER.md START_HERE.md
+include *.md *.json
+recursive-include docs *.md *.json *.jsonl
+recursive-include skills *.md *.json
+recursive-include skill_packs *.md
+recursive-include examples *.py
+recursive-include scripts *.py
+exclude SHA256SUMS.txt

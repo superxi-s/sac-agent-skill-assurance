@@ -1,0 +1,9 @@
+{
+  "schema_version": "action-governance-skill-v3",
+  "name": "action-review",
+  "version": "3.0.1",
+  "entrypoint": "agent_governance.review:review_evidence",
+  "trigger_type": "read_only_review",
+  "permissions": ["READ_EVIDENCE", "EXPLAIN_GATE"],
+  "forbidden_permissions": ["AUTHORIZE", "OVERRIDE_GATE", "DIRECT_DB_WRITE", "DIRECT_DEVICE_CONTROL"]
+}
